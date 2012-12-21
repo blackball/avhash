@@ -128,11 +128,16 @@ main(int argc, char *argv[]) {
 
     cvReleaseImage(&img);
     cvReleaseImage(&gray);
-    
+
+#define 0
     print_bin(bv0);
     print_bin(bv1);
+#endif
+    
     hamming_dist = hamming(bv0, bv1);
 
+    printf("DISTANCE: %d\n", hamming_dist);
+    
     bitvec_free(&bv0);
     bitvec_free(&bv1);
 
