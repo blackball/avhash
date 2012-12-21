@@ -129,7 +129,7 @@ main(int argc, char *argv[]) {
     cvReleaseImage(&img);
     cvReleaseImage(&gray);
 
-#define 0
+#if 0
     print_bin(bv0);
     print_bin(bv1);
 #endif
